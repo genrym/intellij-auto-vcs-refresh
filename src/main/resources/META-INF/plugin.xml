@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>org.genrym.autovcsrefresh</id>
+    <name>Auto VCS Refresh</name>
+    <version>1.0.0</version>
+    <vendor email="henrydev10@gmail.com">Your Name</vendor>
+
+    <description>
+        Automatically refreshes the Local Changes view when external file modifications are detected.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="org.genrym.autovcsrefresh.AutoVcsRefreshStartup"/>
+    </extensions>
+</idea-plugin>
